@@ -1,0 +1,3 @@
+# Exclude model and genai directories (files >100MB)
+/model/
+/genai/

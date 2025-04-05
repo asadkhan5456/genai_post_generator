@@ -1,0 +1,24 @@
+# Data processing & visualization
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+
+# NLP and model fine-tuning
+transformers
+datasets
+accelerate
+torch
+
+# API development
+fastapi
+uvicorn
+
+# Web interface
+streamlit
+requests
+
+# Optional: Sentiment analysis (if implemented)
+nltk
+vaderSentiment
