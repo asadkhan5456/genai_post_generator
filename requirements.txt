@@ -22,3 +22,5 @@ requests
 # Optional: Sentiment analysis (if implemented)
 nltk
 vaderSentiment
+
+pytest
