@@ -84,7 +84,39 @@ Below is the **Workflow Diagram** illustrating each stage—from data ingestion 
 - **User Interface:** Providing an interactive Streamlit app for real-time content generation.
 
 ---
+## How the Streamlit App Works
 
+Below is a screenshot of the **Streamlit app**:
+
+![Streamlit App Screenshot](images/StreamlitApp.png)
+
+1. **Prompt Input:**  
+   - Enter a health-related query or prompt (e.g., “How can I maintain a healthy lifestyle?”).  
+   - This prompt is sent to the `/generate` endpoint in our FastAPI application.
+
+2. **Max Length Slider:**  
+   - Controls the maximum token length of the generated text.  
+   - Increasing this value allows for more detailed responses, while a lower value keeps outputs concise.
+
+3. **Temperature Slider:**  
+   - Adjusts the creativity or randomness of the generation.  
+   - Lower temperatures (e.g., 0.5) yield more predictable, safer text; higher temperatures (e.g., 0.9) increase diversity and spontaneity.
+
+4. **Generate Post Button:**  
+   - Sends your prompt and parameters (max length, temperature) to the FastAPI API.  
+   - The API uses the fine-tuned GPT-2 model to generate a health-related post.  
+   - The result is displayed in real time under “Generated Post.”
+
+### Tips for Recruiters or End Users
+
+- **Experiment:**  
+  Try different prompts, lengths, and temperatures to see how the model adapts.  
+- **Health Domain Relevance:**  
+  Since the model is fine-tuned on health news data, it often provides domain-specific terminology and advice.  
+- **Limitations:**  
+  While GPT-2 is powerful, it can sometimes produce repetitive or off-topic responses. This highlights the importance of further fine-tuning or prompt engineering.
+
+---
 ## Project Setup
 
 ### Prerequisites
