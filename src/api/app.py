@@ -18,8 +18,8 @@ model_path = os.path.join(project_root, "model", "genai_post_model")
 
 # Load fine-tuned GPT-2 model and tokenizer
 try:
-    model = GPT2LMHeadModel.from_pretrained(model_path)
-    tokenizer = GPT2Tokenizer.from_pretrained(model_path)
+    model = GPT2LMHeadModel.from_pretrained(model_path, local_files_only=True)
+    tokenizer = GPT2Tokenizer.from_pretrained(model_path, local_files_only=True)
 except Exception as e:
     raise RuntimeError(f"Error loading model or tokenizer: {e}")
 
